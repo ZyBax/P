@@ -13,13 +13,15 @@
 		</style>
         <script>
             function changeFont() {
-                if (document.body.style.fontFamily === "Helvetica Neue") {
-                    document.body.style.fontFamily = "Nabla, sans-serif";
-                } else {
-                    document.body.style.fontFamily = "Helvetica Neue";
-                }
-            }
-        </script>
+    if (document.body.style.fontFamily === "Helvetica Neue") {
+        document.body.style.fontFamily = "Nabla, sans-serif";
+    } else if (document.body.style.fontFamily === "Nabla, sans-serif") {
+        document.body.style.fontFamily = "Arial, sans-serif";
+    } else {
+        document.body.style.fontFamily = "Helvetica Neue";
+    }
+}
+	</script>
 	</head>
 	<body>
 		<p>
